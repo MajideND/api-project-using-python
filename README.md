@@ -1,4 +1,4 @@
-# Workgenius candidate's Project
+# Workgenius challenge Project
 Disclaimer: This project doesn't have any authentication method for security.
 
 Side | Technologies 
@@ -77,3 +77,11 @@ By default, your backend server is running at 127.0.0.1:5000 and your frontend i
 
 If you changed the server address you should change `let apiPrefix = "http://localhost:5000/api"` in the redux actions.
 
+## APIs
+
+URL | Method | Input Params | Success Output | Errors
+--- | --- | --- | --- | ---
+`/api/login` | POST | `{"username": username}` | `{"status": true, "user": userData}` | 404 If user not found and 500 for server errors
+`/api/register` | POST | `{"username": username, "fullname": fullname, "email": email}` | `{"status": true, "user": userData}` | 403 If user exists and 500 for server errors
+`/api/picture` | GET | user_id: userId, page: requestedPageNumber | `{"status": true, "pictures": picturesList}` | 404 If not exists and 500 for server errors
+`/api/picture` | POST | formData(username: username, picture: pictureFile) | `{"status": true, "picture": pictureData}` | 404 If the user not exists and 500 for server errors

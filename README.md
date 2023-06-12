@@ -1,4 +1,4 @@
-# Workgenius Candidate Project
+# Workgenius candidate's Project
 Disclaimer: This project doesn't have any authentication method for security.
 
 Side | Technologies 

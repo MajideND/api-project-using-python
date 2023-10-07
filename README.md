@@ -1,4 +1,4 @@
-# Workgenius challenge Project
+# A basic Python Project
 Disclaimer: This project doesn't have any authentication method for security.
 
 Side | Technologies 
